@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Karnataka Government Theme - Professional Blue & Gold */
+    --background: 0 0% 100%;
+    --foreground: 210 100% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 100% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 18%;
+
+    /* Primary - Government Dark Blue #002B5C */
+    --primary: 210 100% 18%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Gold Accent #FFD700 */
+    --gold: 51 100% 50%;
+    --gold-foreground: 210 100% 18%;
+
+    /* Secondary - Light Blue for cards */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 100% 18%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 20% 45%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 210 100% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 85%;
+    --input: 210 30% 85%;
+    --ring: 51 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Government Blue Theme */
+    --sidebar-background: 210 100% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 210 100% 18%;
+    --sidebar-accent: 210 100% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 100% 25%;
+    --sidebar-ring: 51 100% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 18%), hsl(210 100% 28%));
+    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%), hsl(45 100% 60%));
+    
+    /* Shadows */
+    --shadow-elevated: 0 10px 30px -10px hsl(210 100% 18% / 0.2);
+    --shadow-gold: 0 0 20px hsl(51 100% 50% / 0.3);
+  }
+
+  .dark {
+    --background: 210 100% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 100% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 100% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 210 100% 18%;
+
+    --secondary: 210 100% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 100% 18%;
+    --muted-foreground: 210 20% 70%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 210 100% 18%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 100% 25%;
+    --input: 210 100% 25%;
+    --ring: 51 100% 50%;
+    
+    --sidebar-background: 210 100% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 210 100% 18%;
+    --sidebar-accent: 210 100% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 100% 20%;
+    --sidebar-ring: 51 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
