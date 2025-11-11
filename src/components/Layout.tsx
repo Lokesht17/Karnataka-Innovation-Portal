@@ -238,7 +238,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
-              <p className="font-semibold">© 2024 Government of Karnataka</p>
+              <p className="font-semibold">© 2025 Government of Karnataka</p>
               <p className="text-sm text-accent">All rights reserved</p>
             </div>
             <div className="text-center md:text-right">
