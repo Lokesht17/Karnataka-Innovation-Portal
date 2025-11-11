@@ -296,7 +296,6 @@ The Supabase client is already configured in `src/integrations/supabase/client.t
 
 For issues or questions:
 - Email: support@karnatakagovt.in
-- Documentation: https://docs.lovable.dev
 
 ---
 
